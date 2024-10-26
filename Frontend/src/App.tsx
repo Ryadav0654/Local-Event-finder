@@ -1,18 +1,23 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { ModeToggle } from "@/components/mode-toggle"
-import './App.css'
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/homePage/index.tsx";
+
 
 function App() {
-
   return (
-    <>
-    <ModeToggle />
-    <Button>Click me</Button>
-    <Input type="text" />
-     <h1 className='text-3xl text-teal-600 font-extrabold'>Reactjs with typescript.</h1>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <HomePage />
+            </Layout>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
