@@ -1,10 +1,10 @@
 // import FeatureCards from '@/components/FeatureCard'
+// import React from "react";
 import Card from "@/components/Card";
-import React from "react";
 
 const index = () => {
   return (
-    <div className="flex  flex-wrap gap-6 mx-28 my-8">
+    <div className="flex  flex-wrap gap-14 md:mx-28 md:my-8">
       <Card />
       <Card />
       <Card />

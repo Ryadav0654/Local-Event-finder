@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full  mt-auto bg-[#2B293D]">
-    <div className="flex p-8">
+    <div className="flex  px-6 py-4 md:p-8 flex-wrap md:flex-nowrap gap-y-5 md:gap-y-0 justify-center">
       <div className="w-[20vw] ml-12 flex flex-col justify-center items-center">
         <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl ">
           Eventify

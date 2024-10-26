@@ -3,6 +3,13 @@ import { IoHeart } from "react-icons/io5";
 import { CalendarIcon, MapPinIcon } from "lucide-react";
 import card_img from '../assets/card1.jpeg'
 import { Link } from "react-router-dom";
+
+// interface CardProps {
+//   title: string;
+//   description: string;
+//   date: string;
+//   address: string;
+// }
 const Card = () => {
   const [isActive, setisActive] = useState<Boolean>(false);
   const [Likes, setLikes] = useState<number>(0);
